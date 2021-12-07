@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    list-style: none;
+}
+
+body {
+    font-size: 10px;
+    font-family: 'Montserrat', 'Arial', 'Tahoma', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: #485268;
+}
+
+.container {
+    max-width: 515px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 214px;
+    background-color: #E25544;
+    color: #FFFFFF;
+    padding-top: 38px;
+    padding-bottom: 25px;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    order: -1;
+    margin-bottom: 30px;
+}
+
+.header-about h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-about span {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-about p {
+    line-height: 150%;
+    text-align: center;
+}
+
+.contacts {
+    padding: 25px 0;
+}
+
+.contacts ul {
+    text-align: center;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #485268;
+}
+
+.contacts li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.top-line .container::before {
+    content: "";
+    background-color: #dee2ed;
+    height: 1px;
+    display: block;
+}
+
+.experience-wrapper {
+    padding: 24px 0;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #E25544;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.list li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.list li>*:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.list h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.list p {
+    line-height: 150%;
+}
+
+.list p>b {
+    font-weight: 500;
+}
+
+.education-wrapper {
+    padding: 24px 0;
+}
+
+.skills-wrapper {
+    padding: 24px 0;
+}
+
+
+/* .list-services {
+    max-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+.list-services li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.tools-wrapper {
+    padding: 24px 0;
+}
+
+.footer {
+    background-color: dimgray;
+    color: black;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.footer-text p:first-child {
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 515px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .header-about {
+        max-width: 351px;
+    }
+    .header-about h1 {
+        text-align: left;
+    }
+    .header-about span {
+        text-align: left;
+    }
+    .header-about p {
+        text-align: left;
+    }
+    .header img {
+        order: unset;
+        margin-bottom: 0;
+    }
+    .contacts ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacts li:not(:last-child) {
+        margin: 0;
+    }
+    .experience-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .experience-wrapper .title {
+        min-width: 150px;
+    }
+    .title {
+        max-width: 150px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+    .list li {
+        border-left: 1px dashed #DEE2ED;
+        padding-left: 8px;
+    }
+    .education-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .skills-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .list-services {
+        max-height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .list-services {
+        align-items: flex-start;
+    }
+    .list-services li:nth-child(-n+2) {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .list-services li:nth-child(4) {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .list-services li:nth-child(5) {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .list-services li {
+        width: 180px;
+        border-left: 1px dashed #DEE2ED;
+        padding-left: 8px;
+    }
+    .tools-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+}
